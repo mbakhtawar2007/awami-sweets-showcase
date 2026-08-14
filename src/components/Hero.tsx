@@ -25,9 +25,14 @@ export function Hero() {
             <span className="block italic text-burgundy">Remember</span>
           </h1>
 
-          <p className="mt-3 font-urdu text-3xl text-caramel sm:text-4xl" lang="ur" dir="rtl">
+          <p
+            className="mt-3 inline-block font-urdu text-3xl text-caramel sm:text-4xl"
+            lang="ur"
+            dir="rtl"
+          >
             {business.urduName}
           </p>
+
 
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Freshly baked cakes, sweets &amp; bakery favourites — made for everyday moments and
