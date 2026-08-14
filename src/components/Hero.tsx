@@ -25,7 +25,7 @@ export function Hero() {
             <span className="block italic text-burgundy">Remember</span>
           </h1>
 
-          <p className="mt-3 w-fit font-urdu text-3xl text-caramel sm:text-4xl" lang="ur">
+          <p className="mt-4 w-fit font-urdu text-3xl leading-[2] text-caramel sm:text-4xl" lang="ur">
             <span dir="rtl">{business.urduName}</span>
           </p>
 
