@@ -25,13 +25,11 @@ export function Hero() {
             <span className="block italic text-burgundy">Remember</span>
           </h1>
 
-          <p
-            className="mt-3 inline-block font-urdu text-3xl text-caramel sm:text-4xl"
-            lang="ur"
-            dir="rtl"
-          >
-            {business.urduName}
+          <p className="mt-3 font-urdu text-3xl text-caramel sm:text-4xl" lang="ur">
+            <span dir="rtl">{business.urduName}</span>
           </p>
+
+
 
 
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
