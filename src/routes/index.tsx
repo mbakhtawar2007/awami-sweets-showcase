@@ -1,24 +1,84 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { TrustBar } from "@/components/TrustBar";
+import { Categories } from "@/components/Categories";
+import { FeaturedProducts } from "@/components/FeaturedProducts";
+import { CustomCake } from "@/components/CustomCake";
+import { About } from "@/components/About";
+import { Reviews } from "@/components/Reviews";
+import { Location } from "@/components/Location";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { FloatingActions } from "@/components/FloatingActions";
+import { business } from "@/data/bakery";
+
+const title = "Awami Foods | Bakery in Saeedabad, Karachi";
+const description =
+  "Discover Awami Foods in Saeedabad, Karachi — cakes, sweets and bakery favorites for everyday moments and special celebrations.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  name: business.name,
+  alternateName: business.urduName,
+  telephone: business.phone,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: `${business.address.line1}, ${business.address.line2}, ${business.address.line3}`,
+    addressLocality: business.address.city,
+    postalCode: business.address.postalCode,
+    addressCountry: "PK",
+  },
+  openingHoursSpecification: business.hours.map((entry) => ({
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: entry.day,
+    opens: entry.open,
+    closes: entry.close,
+  })),
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: business.rating,
+    reviewCount: business.reviewCount,
+  },
+};
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLd) }],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+
+        <Hero />
+        <TrustBar />
+        <Categories />
+        <FeaturedProducts />
+        <CustomCake />
+        <About />
+        <Reviews />
+        <Location />
+        <Contact />
+      </main>
+      <Footer />
+      <FloatingActions />
     </div>
   );
 }
