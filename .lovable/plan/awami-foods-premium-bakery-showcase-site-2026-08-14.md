@@ -37,7 +37,7 @@ A single-page, production-quality concept website for Awami Foods (عوامی), 
 - Fonts loaded via `<link>` in `src/routes/__root.tsx`.
 - Scroll animations via a small IntersectionObserver hook (no animation library) to keep JS light; reduced-motion respected.
 - Images generated into `src/assets/`, imported as ES modules, below-the-fold images lazy-loaded with explicit dimensions to avoid layout shift.
-- SEO: route `head()` with the specified title/description, og/twitter tags, canonical, and Bakery JSON-LD (name, address, phone, hours, aggregateRating 4.0/73).
+- SEO: route `head()` with the specified title/description, og/twitter tags, canonical, and Bakery JSON-LD (name, address, phone, hours, aggregateRating 4.0 ★ · 73 Reviews).
 - No backend, no database, no auth, no payments.
 
 ## Verification
