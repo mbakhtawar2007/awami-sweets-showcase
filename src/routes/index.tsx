@@ -66,9 +66,7 @@ function Index() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        <h1 className="sr-only">
-          {business.name} — bakery, cakes and sweets in {addressLines[1]}, Karachi
-        </h1>
+
         <Hero />
         <TrustBar />
         <Categories />
