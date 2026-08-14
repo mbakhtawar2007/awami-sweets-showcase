@@ -12,7 +12,7 @@ import { Location } from "@/components/Location";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { FloatingActions } from "@/components/FloatingActions";
-import { business, addressLines } from "@/data/bakery";
+import { business } from "@/data/bakery";
 
 const title = "Awami Foods | Bakery in Saeedabad, Karachi";
 const description =
