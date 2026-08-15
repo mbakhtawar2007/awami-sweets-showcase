@@ -67,9 +67,8 @@ export function Contact() {
                   Your details look good
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  In this demo nothing was sent — no enquiry has reached the bakery. Once the site
-                  goes live, this form can deliver enquiries directly. For now, please call the
-                  bakery to place your request.
+                  Thanks! This is a website concept, so this form does not currently send
+                  messages. Please call 0323 2810084 to contact Awami Foods.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
