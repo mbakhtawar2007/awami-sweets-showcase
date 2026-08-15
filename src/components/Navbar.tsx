@@ -37,9 +37,11 @@ export function Navbar() {
         <a href="#home" className="flex items-center gap-3 rounded-md">
           <span
             aria-hidden="true"
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-plum font-urdu text-xl leading-none text-gold sm:h-12 sm:w-12 sm:text-2xl"
+            className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-plum sm:h-12 sm:w-12"
           >
-            {business.urduName}
+            <span className="font-urdu text-lg text-gold sm:text-xl" style={{ lineHeight: 1.6 }}>
+              {business.urduName}
+            </span>
           </span>
           <span className="flex flex-col leading-tight">
             <span className="font-display text-lg font-semibold tracking-tight text-foreground sm:text-xl">
