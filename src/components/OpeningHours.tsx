@@ -22,8 +22,7 @@ export function OpeningHours() {
         ))}
       </dl>
       <p className="mt-4 text-xs text-muted-foreground">
-        Hours may vary on holidays. Shown as demo/reference timings for this concept — please
-        confirm before visiting.
+        Hours may vary on holidays. Public listing reference — please confirm before visiting.
       </p>
     </div>
   );

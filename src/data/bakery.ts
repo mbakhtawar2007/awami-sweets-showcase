@@ -14,10 +14,79 @@ import prodChocolate from "@/assets/hero-cake.jpg";
 import prodVanilla from "@/assets/prod-vanilla.jpg";
 import prodBlackForest from "@/assets/prod-blackforest.jpg";
 import prodCustom from "@/assets/prod-custom.jpg";
+import imgCounter from "@/assets/counter.jpg";
+import imgStorefront from "@/assets/storefront.jpg";
+import imgSweetsTray from "@/assets/gal-sweets-tray.jpg";
+import imgShelves from "@/assets/gal-shelves.jpg";
+
+export const heroImages = {
+  counter: imgCounter,
+  cake: prodChocolate,
+  sweets: imgSweetsTray,
+};
+
+export const storefrontImage = imgStorefront;
+
+export type GalleryItem = {
+  id: string;
+  image: string;
+  alt: string;
+  caption: string;
+  width: number;
+  height: number;
+};
+
+/**
+ * Placeholder imagery. Swap these entries for the bakery's own photographs.
+ */
+export const gallery: GalleryItem[] = [
+  {
+    id: "storefront",
+    image: imgStorefront,
+    alt: "Placeholder image of a neighbourhood bakery shopfront lit at dusk",
+    caption: "Shopfront",
+    width: 1408,
+    height: 1008,
+  },
+  {
+    id: "counter",
+    image: imgCounter,
+    alt: "Placeholder image of a glass bakery display counter filled with cream cakes",
+    caption: "Display counter",
+    width: 1100,
+    height: 1300,
+  },
+  {
+    id: "sweets",
+    image: imgSweetsTray,
+    alt: "Placeholder image of steel trays of traditional mithai sweets",
+    caption: "Sweets trays",
+    width: 1000,
+    height: 1000,
+  },
+  {
+    id: "shelves",
+    image: imgShelves,
+    alt: "Placeholder image of bakery shelves stacked with biscuits, rusks and bread",
+    caption: "Bakery shelves",
+    width: 1000,
+    height: 1200,
+  },
+  {
+    id: "drinks",
+    image: catDrinks,
+    alt: "Placeholder image of chilled bottled drinks in a shop cooler",
+    caption: "Cold drinks",
+    width: 900,
+    height: 900,
+  },
+];
 
 export const business = {
   name: "Awami Foods",
   urduName: "عوامی",
+  subName: "Sweets & Bakers",
+  urduSubName: "سویٹس اینڈ بیکرز",
   category: "Bakery",
   tagline: "Freshly Baked. Made for Every Occasion.",
   phone: "+92 323 2810084",
@@ -106,39 +175,39 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    id: "chocolate-celebration",
-    name: "Chocolate Celebration Cake",
-    description: "Rich chocolate layers with a glossy ganache finish.",
+    id: "celebration-cake",
+    name: "Celebration Cake — Showcase",
+    description: "The kind of layered celebration cake a local bakery makes to order.",
     category: "Cakes",
     image: prodChocolate,
-    status: "Made to Order",
+    status: "Contact for Price",
     isDemo: true,
   },
   {
-    id: "vanilla-cream",
-    name: "Vanilla Cream Cake",
-    description: "Light sponge with smooth vanilla cream.",
+    id: "cream-cake",
+    name: "Cream Cake — Showcase",
+    description: "Light sponge with smooth cream — a classic bakery counter favourite.",
     category: "Cakes",
     image: prodVanilla,
     status: "Contact for Price",
     isDemo: true,
   },
   {
-    id: "black-forest",
-    name: "Black Forest Cake",
-    description: "Chocolate, cream and cherries — an all-time favourite.",
+    id: "chocolate-cake",
+    name: "Chocolate Cake — Showcase",
+    description: "Chocolate layers with cream — shown here as a design example.",
     category: "Cakes",
     image: prodBlackForest,
-    status: "Made to Order",
+    status: "Contact for Price",
     isDemo: true,
   },
   {
-    id: "custom-birthday",
-    name: "Custom Birthday Cake",
-    description: "Designed around your theme, flavour and celebration.",
+    id: "custom-inspiration",
+    name: "Custom Cake Inspiration",
+    description: "An example of how a themed birthday cake request could be presented.",
     category: "Custom",
     image: prodCustom,
-    status: "Made to Order",
+    status: "Contact for Price",
     isDemo: true,
   },
 ];
@@ -181,6 +250,7 @@ export const reviewSummaries: ReviewSummary[] = [
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Menu", href: "#menu" },
+  { label: "Gallery", href: "#gallery" },
   { label: "About", href: "#about" },
   { label: "Reviews", href: "#reviews" },
   { label: "Contact", href: "#contact" },

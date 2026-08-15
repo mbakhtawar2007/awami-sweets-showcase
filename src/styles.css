@@ -49,44 +49,47 @@
   --color-cream: var(--cream);
   --color-ivory: var(--ivory);
   --color-cocoa: var(--cocoa);
+  --color-plum: var(--plum);
   --color-caramel: var(--caramel);
   --color-gold: var(--gold);
   --color-burgundy: var(--burgundy);
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Karla", ui-sans-serif, system-ui, sans-serif;
   --font-urdu: "Noto Nastaliq Urdu", serif;
-  --shadow-soft: 0 18px 50px -28px oklch(0.28 0.06 55 / 0.45);
-  --shadow-lift: 0 30px 70px -34px oklch(0.28 0.06 55 / 0.55);
+  --shadow-soft: 0 18px 50px -28px oklch(0.28 0.06 318 / 0.4);
+  --shadow-lift: 0 30px 70px -34px oklch(0.28 0.06 318 / 0.5);
+
 }
 
 :root {
   --radius: 0.75rem;
 
-  --cream: oklch(0.972 0.014 88);
-  --ivory: oklch(0.988 0.008 92);
-  --cocoa: oklch(0.278 0.048 48);
-  --caramel: oklch(0.66 0.104 62);
-  --gold: oklch(0.77 0.098 85);
-  --burgundy: oklch(0.42 0.12 22);
+  --cream: oklch(0.973 0.011 85);
+  --ivory: oklch(0.989 0.006 90);
+  --plum: oklch(0.298 0.078 318);
+  --cocoa: var(--plum);
+  --caramel: oklch(0.575 0.115 72);
+  --gold: oklch(0.805 0.145 88);
+  --burgundy: oklch(0.415 0.135 15);
 
   --background: var(--cream);
-  --foreground: var(--cocoa);
+  --foreground: oklch(0.265 0.035 318);
   --card: var(--ivory);
-  --card-foreground: var(--cocoa);
+  --card-foreground: var(--foreground);
   --popover: var(--ivory);
-  --popover-foreground: var(--cocoa);
-  --primary: var(--cocoa);
+  --popover-foreground: var(--foreground);
+  --primary: var(--plum);
   --primary-foreground: oklch(0.985 0.01 90);
-  --secondary: oklch(0.94 0.022 80);
-  --secondary-foreground: var(--cocoa);
-  --muted: oklch(0.945 0.018 84);
-  --muted-foreground: oklch(0.49 0.038 55);
-  --accent: var(--caramel);
-  --accent-foreground: oklch(0.99 0.008 90);
+  --secondary: oklch(0.945 0.016 78);
+  --secondary-foreground: var(--foreground);
+  --muted: oklch(0.948 0.014 82);
+  --muted-foreground: oklch(0.485 0.03 315);
   --destructive: oklch(0.52 0.17 25);
   --destructive-foreground: oklch(0.985 0.01 90);
-  --border: oklch(0.89 0.024 78);
-  --input: oklch(0.89 0.024 78);
+  --accent: var(--caramel);
+  --accent-foreground: oklch(0.99 0.008 90);
+  --border: oklch(0.895 0.014 80);
+  --input: oklch(0.895 0.014 80);
   --ring: var(--caramel);
 }
 

@@ -8,7 +8,7 @@ export function Reviews() {
       <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <Reveal>
-            <p className="section-label">Customer Feedback</p>
+            <p className="section-label">Customer feedback themes</p>
             <h2 className="mt-3 font-display text-4xl text-foreground sm:text-5xl">
               Loved by the Neighbourhood
             </h2>
@@ -24,20 +24,20 @@ export function Reviews() {
                   key={i}
                   className={
                     i < Math.round(business.rating)
-                      ? "h-4 w-4 fill-caramel text-caramel"
+                      ? "h-4 w-4 fill-gold text-gold"
                       : "h-4 w-4 text-border"
                   }
                 />
               ))}
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Based on {business.reviewCount} publicly visible reviews.
+              Rating and review count shown from the public Google listing ({business.reviewCount} reviews).
             </p>
             <a
               href={business.mapsUrl}
               target="_blank"
               rel="noreferrer noopener"
-              className="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/25 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-caramel hover:text-caramel"
+              className="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/25 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-gold hover:text-caramel"
             >
               See More Reviews
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
