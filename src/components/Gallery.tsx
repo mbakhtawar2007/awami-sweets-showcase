@@ -24,7 +24,7 @@ export function Gallery() {
                 i === 0
                   ? "col-span-2 lg:col-span-2 lg:row-span-2"
                   : i === 4
-                    ? "col-span-2 lg:col-span-2"
+                    ? "col-span-2 lg:col-span-1"
                     : ""
               }
             >
