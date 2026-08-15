@@ -250,6 +250,7 @@ export const reviewSummaries: ReviewSummary[] = [
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Menu", href: "#menu" },
+  { label: "Gallery", href: "#gallery" },
   { label: "About", href: "#about" },
   { label: "Reviews", href: "#reviews" },
   { label: "Contact", href: "#contact" },

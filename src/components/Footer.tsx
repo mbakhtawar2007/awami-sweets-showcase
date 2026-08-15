@@ -11,6 +11,9 @@ export function Footer() {
               {business.urduName}
             </p>
             <p className="mt-1 font-display text-2xl">{business.name}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold/80">
+              {business.subName}
+            </p>
             <p className="mt-3 text-sm text-primary-foreground/70">{business.tagline}</p>
           </div>
 
@@ -50,7 +53,7 @@ export function Footer() {
         <div className="mt-12 border-t border-primary-foreground/15 pt-6">
           <p className="text-xs leading-relaxed text-primary-foreground/60">{demoNotice}</p>
           <p className="mt-3 text-xs text-primary-foreground/60">
-            © 2026 Awami Foods. Demo website concept.
+            © 2026 Awami Foods. Unofficial website concept created as a showcase.
           </p>
         </div>
       </div>

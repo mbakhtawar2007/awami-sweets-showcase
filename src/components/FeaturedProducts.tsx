@@ -13,8 +13,8 @@ export function FeaturedProducts() {
               Made for Sweet Moments
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Sample cake concepts shown for this website demo. The bakery's actual menu and pricing
-              can replace these at any time.
+              Showcase examples of how cakes could be presented. Images are placeholders and prices are
+              confirmed directly with the bakery.
             </p>
           </div>
           <a
@@ -36,12 +36,12 @@ export function FeaturedProducts() {
                     width={900}
                     height={900}
                     loading="lazy"
-                    alt={`Demo photograph of a ${product.name.toLowerCase()}`}
+                    alt={`Placeholder photograph representing a ${product.category.toLowerCase()} item`}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   {product.isDemo && (
                     <span className="absolute left-3 top-3 rounded-full bg-background/90 px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground backdrop-blur">
-                      Demo item
+                      Showcase image
                     </span>
                   )}
                 </div>
@@ -57,7 +57,7 @@ export function FeaturedProducts() {
                     <span className="text-sm font-semibold text-foreground">{product.status}</span>
                     <a
                       href="#contact"
-                      className="rounded-full border border-border px-4 py-1.5 text-xs font-semibold text-foreground transition-colors hover:border-caramel hover:text-caramel"
+                      className="rounded-full border border-border px-4 py-1.5 text-xs font-semibold text-foreground transition-colors hover:border-gold hover:text-caramel"
                     >
                       Enquire
                     </a>
