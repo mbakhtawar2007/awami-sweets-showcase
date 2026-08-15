@@ -17,13 +17,13 @@ export function About() {
                 width={1200}
                 height={900}
                 loading="lazy"
-                alt="Demo photograph of a warm bakery interior with display cases"
+                alt="Placeholder photograph of a warm bakery interior with display cases"
                 className="h-full w-full object-cover"
               />
             </div>
             <span
               aria-hidden="true"
-              className="absolute -bottom-6 -right-2 hidden font-urdu text-6xl text-caramel/45 sm:block"
+              className="absolute -bottom-6 -right-2 hidden font-urdu text-6xl text-gold/60 sm:block"
             >
               {business.urduName}
             </span>
@@ -36,9 +36,10 @@ export function About() {
             A Local Favourite in Saeedabad
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            Awami Foods brings together cakes, sweets and bakery favourites for the people of
-            Saeedabad and surrounding areas. Whether you're picking up something for your family or
-            celebrating a special moment, we're here to make it sweeter.
+            Awami Foods is a bakery in Saeedabad, Karachi, offering cakes, sweets, bakery items
+            and beverages, with takeout available. Custom cakes can be requested for birthdays and
+            celebrations — everything else on this page stays limited to what the public listing
+            confirms.
           </p>
           <span className="mt-6 inline-flex rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-caramel">
             Serving the Saeedabad community
