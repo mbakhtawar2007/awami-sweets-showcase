@@ -6,6 +6,8 @@ import { TrustBar } from "@/components/TrustBar";
 import { Categories } from "@/components/Categories";
 import { FeaturedProducts } from "@/components/FeaturedProducts";
 import { CustomCake } from "@/components/CustomCake";
+import { Storefront } from "@/components/Storefront";
+import { Gallery } from "@/components/Gallery";
 import { About } from "@/components/About";
 import { Reviews } from "@/components/Reviews";
 import { Location } from "@/components/Location";
@@ -16,7 +18,7 @@ import { business } from "@/data/bakery";
 
 const title = "Awami Foods | Bakery in Saeedabad, Karachi";
 const description =
-  "Discover Awami Foods in Saeedabad, Karachi — cakes, sweets and bakery favorites for everyday moments and special celebrations.";
+  "Awami Foods in Saeedabad, Karachi — cakes, sweets, bakery favorites and beverages for everyday moments and celebrations.";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -37,11 +39,6 @@ const jsonLd = {
     opens: entry.open,
     closes: entry.close,
   })),
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: business.rating,
-    reviewCount: business.reviewCount,
-  },
 };
 
 export const Route = createFileRoute("/")({
@@ -71,7 +68,9 @@ function Index() {
         <TrustBar />
         <Categories />
         <FeaturedProducts />
+        <Storefront />
         <CustomCake />
+        <Gallery />
         <About />
         <Reviews />
         <Location />
