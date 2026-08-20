@@ -226,15 +226,13 @@ export type ReviewSummary = {
 export const reviewSummaries: ReviewSummary[] = [
   {
     id: "bakery-items",
-    summary:
-      "Customers describe a positive experience with the bakery items available in store.",
+    summary: "Customers describe a positive experience with the bakery items available in store.",
     theme: "Bakery items",
     source: "Public review sentiment",
   },
   {
     id: "cakes-sweets",
-    summary:
-      "Cakes and sweets are mentioned favourably in publicly visible feedback.",
+    summary: "Cakes and sweets are mentioned favourably in publicly visible feedback.",
     theme: "Cakes & sweets",
     source: "Public review sentiment",
   },

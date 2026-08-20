@@ -31,7 +31,8 @@ export function Reviews() {
               ))}
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Rating and review count shown from the public Google listing ({business.reviewCount} reviews).
+              Rating and review count shown from the public Google listing ({business.reviewCount}{" "}
+              reviews).
             </p>
             <a
               href={business.mapsUrl}

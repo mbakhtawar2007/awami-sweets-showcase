@@ -20,6 +20,14 @@ const title = "Awami Foods | Bakery in Saeedabad, Karachi";
 const description =
   "Awami Foods in Saeedabad, Karachi — cakes, sweets, bakery favorites and beverages for everyday moments and celebrations.";
 
+// schema.org expects 24-hour ISO times ("9:00 AM" -> "09:00:00")
+const toIsoTime = (time: string) => {
+  const [hhmm = "", meridiem = ""] = time.split(" ");
+  const [hours = 0, minutes = 0] = hhmm.split(":").map(Number);
+  const hour = meridiem === "PM" ? (hours % 12) + 12 : hours % 12;
+  return `${String(hour).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00`;
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Bakery",
@@ -36,8 +44,8 @@ const jsonLd = {
   openingHoursSpecification: business.hours.map((entry) => ({
     "@type": "OpeningHoursSpecification",
     dayOfWeek: entry.day,
-    opens: entry.open,
-    closes: entry.close,
+    opens: toIsoTime(entry.open),
+    closes: toIsoTime(entry.close),
   })),
 };
 
@@ -63,7 +71,6 @@ function Index() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-
         <Hero />
         <TrustBar />
         <Categories />

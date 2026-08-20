@@ -13,8 +13,8 @@ export function FeaturedProducts() {
               Made for Sweet Moments
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Showcase examples of how cakes could be presented. Images are placeholders and prices are
-              confirmed directly with the bakery.
+              Showcase examples of how cakes could be presented. Images are placeholders and prices
+              are confirmed directly with the bakery.
             </p>
           </div>
           <a

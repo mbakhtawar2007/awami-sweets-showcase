@@ -27,7 +27,9 @@ export function Storefront() {
           <h2 className="mt-3 font-display text-4xl text-foreground sm:text-5xl">
             Awami Foods, Saeedabad
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">A glimpse of the bakery behind the name.</p>
+          <p className="mt-4 text-lg text-muted-foreground">
+            A glimpse of the bakery behind the name.
+          </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             This website concept is designed around the real bakery on Shahara-e-Ali, Chandni Chowk
             in Saeedabad — a local shop known for cakes, sweets, bakery items and cold drinks, with

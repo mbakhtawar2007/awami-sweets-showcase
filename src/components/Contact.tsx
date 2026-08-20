@@ -29,10 +29,7 @@ export function Contact() {
     "mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:border-caramel focus:outline-none";
 
   return (
-    <section
-      id="contact"
-      className="scroll-mt-24 bg-secondary/50 py-20 lg:py-28"
-    >
+    <section id="contact" className="scroll-mt-24 bg-secondary/50 py-20 lg:py-28">
       <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <Reveal>
@@ -67,8 +64,8 @@ export function Contact() {
                   Your details look good
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Thanks! This is a website concept, so this form does not currently send
-                  messages. Please call 0323 2810084 to contact Awami Foods.
+                  Thanks! This is a website concept, so this form does not currently send messages.
+                  Please call 0323 2810084 to contact Awami Foods.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a

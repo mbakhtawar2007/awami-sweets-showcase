@@ -58,7 +58,6 @@
   --font-urdu: "Noto Nastaliq Urdu", serif;
   --shadow-soft: 0 18px 50px -28px oklch(0.28 0.06 318 / 0.4);
   --shadow-lift: 0 30px 70px -34px oklch(0.28 0.06 318 / 0.5);
-
 }
 
 :root {
@@ -177,4 +176,3 @@
 @utility float-soft {
   animation: float-soft 7s ease-in-out infinite;
 }
-

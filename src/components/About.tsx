@@ -36,8 +36,8 @@ export function About() {
             A Local Favourite in Saeedabad
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            Awami Foods is a bakery in Saeedabad, Karachi, offering cakes, sweets, bakery items
-            and beverages, with takeout available. Custom cakes can be requested for birthdays and
+            Awami Foods is a bakery in Saeedabad, Karachi, offering cakes, sweets, bakery items and
+            beverages, with takeout available. Custom cakes can be requested for birthdays and
             celebrations — everything else on this page stays limited to what the public listing
             confirms.
           </p>

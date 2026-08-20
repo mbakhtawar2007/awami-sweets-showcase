@@ -21,20 +21,21 @@ export function useReveal<T extends HTMLElement = HTMLDivElement>(delayMs = 0) {
       return;
     }
 
+    let timer: number | undefined;
     const observer = new IntersectionObserver(
       (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            window.setTimeout(() => setVisible(true), delayMs);
-            observer.disconnect();
-          }
-        }
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        timer = window.setTimeout(() => setVisible(true), delayMs);
+        observer.disconnect();
       },
       { threshold: 0.12, rootMargin: "0px 0px -60px 0px" },
     );
 
     observer.observe(node);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(timer);
+    };
   }, [delayMs]);
 
   return { ref, visible };

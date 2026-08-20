@@ -3,7 +3,10 @@ import { Reveal } from "@/components/Reveal";
 
 export function Categories() {
   return (
-    <section id="menu" className="mx-auto w-full max-w-7xl scroll-mt-24 px-5 py-20 sm:px-8 lg:py-28">
+    <section
+      id="menu"
+      className="mx-auto w-full max-w-7xl scroll-mt-24 px-5 py-20 sm:px-8 lg:py-28"
+    >
       <Reveal className="max-w-2xl">
         <p className="section-label">Our Counter</p>
         <h2 className="mt-3 font-display text-4xl text-foreground sm:text-5xl">
