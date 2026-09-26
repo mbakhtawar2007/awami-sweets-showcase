@@ -10,7 +10,7 @@ This is a concept/demo site built to show what Awami Foods' professional online 
 - [React 19](https://react.dev) + TypeScript
 - [Tailwind CSS v4](https://tailwindcss.com) — custom warm bakery design system in `src/styles.css`
 - [Lucide](https://lucide.dev) icons
-- [Bun](https://bun.sh) — package manager and runtime
+- [npm](https://www.npmjs.com/) / [npx](https://docs.npmjs.com/cli/v10/using-npm/scripts) — package manager and CLI runner
 
 ## Project Structure
 
@@ -29,22 +29,22 @@ src/
 
 ## Getting Started
 
-Requires [Bun](https://bun.sh) (or Node.js 18+).
+Requires [Node.js 18+](https://nodejs.org/) and [npm](https://www.npmjs.com/).
 
 ```sh
-bun install
-bun run dev      # start the dev server at http://localhost:8080
+npm install
+npm run dev      # start the dev server at http://localhost:8080
 ```
 
 ### Scripts
 
 | Command            | Description                             |
 | ------------------ | --------------------------------------- |
-| `bun run dev`      | Start the Vite dev server               |
-| `bun run build`    | Production build (client + server)      |
-| `bun run preview`  | Preview the production build            |
-| `bun run lint`     | ESLint + Prettier checks                |
-| `bun run format`   | Format all files with Prettier          |
+| `npm run dev`      | Start the Vite dev server               |
+| `npm run build`    | Production build (client + server)      |
+| `npm run preview`  | Preview the production build            |
+| `npm run lint`     | ESLint + Prettier checks                |
+| `npm run format`   | Format all files with Prettier          |
 
 This project was built with [Lovable](https://lovable.dev).
 
